@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog sobre programação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="index.html" id="title">Blog sobre programação</a>
+        <nav class="navbar" >
+            <a id="mobile-nav" onclick="abreMobileNav()" ><i class="fas fa-bars"></i></a>
+            <ul id="mobile-nav-itens" >
+                <li style="margin-top: -40px;border: none; padding: none;" ><a id="mobile-nav-close" onclick="fechaMobileNav()" ><i class="fas fa-times"></i></a></li>
+                <li style="margin-top: 20px;" ><a href="index.html">Home</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="artigos.html">Notícias</a></li>
+                <li><a href="artigos.html">Programação</a></li>
+                <li><a href="artigos.html">Sistemas Operacionais</a></li>
+                <li><a href="artigos.html">Web Design</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+            <ul id="nav-itens" id="navbarNavDarkDropdown" >
+                <li style="margin-top: 10px;" >Home</li>
+                <li style="margin-top: 10px;" >
+                    Artigos
+                </li>
+                <li style="margin-top: 10px;" >
+                    Notícias
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Programação
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Javascript</a></li>
+                        <li><a class="dropdown-item" href="#">PHP</a></li>
+                        <li><a class="dropdown-item" href="#">Banco de Dados</a></li>
+                        <li><a class="dropdown-item" href="#">Node.js</a></li>
+                        <li><a class="dropdown-item" href="#">Python</a></li>
+                        <li><a class="dropdown-item" href="#">Java</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sistemas Operacionais
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Android</a></li>
+                        <li><a class="dropdown-item" href="#">IOS</a></li>
+                        <li><a class="dropdown-item" href="#">Linux</a></li>
+                        <li><a class="dropdown-item" href="#">Windows</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" style="color: white;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Web Design
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">CSS</a></li>
+                        <li><a class="dropdown-item" href="#">Bootstrap</a></li>
+                        <li><a class="dropdown-item" href="#">Sass</a></li>
+                        <li><a class="dropdown-item" href="#">Less</a></li>
+                    </ul>
+                </li>
+                <li style="margin-top: 10px;" ><a class="nav-a" href="contato.html" >Contato</a></li>
+                <li style="margin-top: 10px;" ><a class="nav-a" href="login.html" >Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <main class="main-content">
+                <div class="artigo-item">
+                    <img src="nodejs.png" class="artigo-item-img">
+                    <div class="artigo-item-informacoes" >
+                        <h1 class="artigo-titulo" style="margin-top: 20px; color: rgb(65, 64, 64); font-weight: bold;" >Título</h1>
+                        <ul class="artigo-informacoes" style="margin-top: 20px;" >
+                            <li style="color: rgb(107, 106, 106)" >Autor</li>
+                            <li style="color: rgb(107, 106, 106)" >Data de Publicação</li>
+                            <li style="color: rgb(107, 106, 106)" >Categoria</li>
+                        </ul>
+                        <p class="artigo-resumo" style="width: 90%;" >
+                            <a href="artigo.html">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artigo-item">
+                    <img src="react-JS.jpg" class="artigo-item-img">
+                    <div class="artigo-item-informacoes" >
+                        <h1 class="artigo-titulo" style="margin-top: 20px; color: rgb(65, 64, 64); font-weight: bold;" >Título</h1>
+                        <ul class="artigo-informacoes" style="margin-top: 20px;" >
+                            <li style="color: rgb(107, 106, 106)" >Autor</li>
+                            <li style="color: rgb(107, 106, 106)" >Data de Publicação</li>
+                            <li style="color: rgb(107, 106, 106)" >Categoria</li>
+                        </ul>
+                        <p class="artigo-resumo" style="width: 90%;" >
+                            <a href="artigo.html">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artigo-item">
+                    <img src="angularjs.png" class="artigo-item-img">
+                    <div class="artigo-item-informacoes" >
+                        <h1 class="artigo-titulo" style="margin-top: 20px; color: rgb(65, 64, 64); font-weight: bold;" >Título</h1>
+                        <ul class="artigo-informacoes" style="margin-top: 20px;" >
+                            <li style="color: rgb(107, 106, 106)" >Autor</li>
+                            <li style="color: rgb(107, 106, 106)" >Data de Publicação</li>
+                            <li style="color: rgb(107, 106, 106)" >Categoria</li>
+                        </ul>
+                        <p class="artigo-resumo" style="width: 90%;" >
+                            <a href="artigo.html">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="artigo-item">
+                    <img src="vuejs.jpg" class="artigo-item-img">
+                    <div class="artigo-item-informacoes" >
+                        <h1 class="artigo-titulo" style="margin-top: 20px; color: rgb(65, 64, 64); font-weight: bold;" >Título</h1>
+                        <ul class="artigo-informacoes" style="margin-top: 20px;" >
+                            <li style="color: rgb(107, 106, 106)" >Autor</li>
+                            <li style="color: rgb(107, 106, 106)" >Data de Publicação</li>
+                            <li style="color: rgb(107, 106, 106)" >Categoria</li>
+                        </ul>
+                        <p class="artigo-resumo" style="width: 90%;" >
+                            <a href="artigo.html">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </main>
+            <section class="side-content" >
+                <h2>Procurando Artigo?</h2>
+                <form>
+                    <input type="text" placeholder="Digite um texto">
+                    <button>Pesquisar</button>
+                </form>
+
+                <h2>Sobre o autor</h2>
+                <img src="WIN_20200319_13_50_34_Pro (2).jpg">
+                <p style="margin-top: 10px;" >Tiago - Desenvolvedor Fullstack</p>
+                <ul>
+                    <li>Formado em Técnico em informática</li>
+                    <li>Graduando em Análise e Desenvolvimento de Sistemas</li>
+                </ul>
+
+                <h3>Conhecimentos em:</h3>
+                <p>Javascript, HTML, CSS, React.js, Vue.js,<br> Node.js.</p>
+
+                <h3>Banco de dados:</h3>
+                <p>MySQL, Postgresql e mongodb.</p>
+
+                <h2 style="margin-top: 30px;margin-bottom: 8px;" >Quer receber novidades?</h2>
+                <form id="cadastro-email">
+                    <label>Nome</label>
+                    <input type="text">
+                    <label>E-mail</label>
+                    <input type="email">
+                    <button style="width: 90%" >Cadastrar</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-item" style="margin-left: 120px;">
+            <h1>Categorias</h1>
+            <ul>
+                <li><a href="artigos.html" >Banco de dados</a></li>
+                <li><a href="artigos.html" >Ferramentas</a></li>
+                <li><a href="artigos.html" >HTML5</a></li>
+                <li><a href="artigos.html" >Javascript</a></li>
+                <li><a href="artigos.html" >Jquery</a></li>
+                <li><a href="artigos.html" >PHP</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h1>Contato</h1>
+            <ul>
+                <li>Email: winkellandi123@gmail.com</li>
+            </ul>
+        </div>
+
+        <div class="footer-item">
+            <h1>Procurando Artigo?</h1>
+            <form>
+                <input type="text" id="buscar" placeholder="Digite um texto">
+                <button>Pesquisar</button>
+            </form>
+        </div>
+    </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js" ></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function abreMobileNav(){
+            document.getElementById("mobile-nav-itens").style.display = "initial";
+            document.getElementById("mobile-nav").style.display = "none";
+            document.getElementById("corpo").style.filter = "brightness(80%)";
+        }
+
+        function fechaMobileNav(){
+            document.getElementById("mobile-nav-itens").style.display = "none";
+            document.getElementById("mobile-nav").style.display = "initial";
+            document.getElementById("corpo").style.filter = "brightness(100%)";
+        }
+    </script>
+</body>
+</html>

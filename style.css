@@ -1,0 +1,619 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: #eaeaea;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    color: rgb(150, 147, 147);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: flex-start;
+    height: auto;
+    width: 85%;
+    background-color: white;
+    padding: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+}
+
+header{
+    width: 100%;
+    background-color: #0a66c2;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#title{
+    color: white;
+    margin-left: 120px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(88, 137, 235);
+    height: 55px;
+    flex-wrap: wrap;
+}
+
+#nav-itens{
+    display: flex;
+    padding-left: 120px;
+    /* padding-top: 17px; */
+    padding-bottom: 17px;
+}
+
+#nav-itens li{
+    color: white;
+    margin-right: 45px;
+    font-size: 1.2rem;
+}
+
+.main-content{
+    width: 70%;
+    height: auto;
+    background-color: white;
+    padding-top: 25px;
+    justify-content: column;
+    padding-bottom: 30px;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content{
+    width: 30%;
+    height: auto;
+    background-color: rgb(214, 214, 214);
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    padding-left: 16px;
+    margin-right: -20px;
+}
+
+.side-content h2{
+    font-size: 1.4rem;
+    color: rgb(61, 61, 61);
+}
+
+.side-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: square;
+    margin-top: 20px;
+    margin-left: 23px;
+}
+
+.side-content form{
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.side-content input{
+    height: 33px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.side-content button{
+    border: none;
+    background-color: #0a66c2;
+    color: white;
+    margin-top: 10px;
+}
+
+.side-content img{
+    width: 54%;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.side-content p{
+    font-size: 1.2rem;
+    color: rgb(92, 90, 90);
+    font-weight: lighter;
+    margin-top: 8px;
+}
+
+.side-content li{
+    color: rgb(92, 90, 90);
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+.side-content h3{
+    color: rgb(61, 61, 61);
+    font-size: 1.1rem;
+    margin-top: 17px;
+    font-weight: bold;
+}
+
+#cadastro-email{
+    display: flex;
+    flex-direction: column;
+}
+
+#cadastro-email label{
+    font-size: 1.2rem;
+    color: rgb(92, 90, 90);
+}
+
+#cadastro-email button{
+    width: 244px;
+    height: 33px;
+}
+
+
+#carousel{
+    width: 95%;
+    height: 300px;
+    background-color: rgb(55, 54, 54);
+    margin: 0 auto;
+}
+
+.carousel-img{
+    width: 100%;
+    height: 300px;
+}
+
+
+
+.artigo{
+    width: 43.6%;
+    height: auto;
+    background-color: rgb(55, 54, 54);
+    margin-left: 28px;
+    margin-right: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+}
+
+.fa-user, .fa-clock, .fa-folder{
+    margin-right: 5px;
+}
+.artigo-img{
+    width: 100%;
+    height: 200px;
+    background-color: darkmagenta;
+}
+
+.artigo-titulo{
+    margin-left: 23px;
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 25px;
+}
+
+.artigo-informacoes{
+    display: flex;
+    margin-left: 23px;
+    margin-top: 30px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+.artigo-informacoes li{
+    margin-right: 15px;
+}
+
+.artigo-resumo{
+    color: rgb(169, 164, 164);
+    font-family: "Source Sans Pro",Arial,sans-serif;
+    margin-left: 23px;
+    margin-top: 10px;
+}
+
+.artigo-resumo a{
+    color: gray;
+}
+
+footer{
+    width: 100%;
+    height: 200px;
+    background-color: gray;
+    display: flex;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#artigo-titulo{
+    font-family: Oswald;
+    font-size: 2.3rem;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+.artigo-paragrafo{
+    font-family: Source Sans Pro;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 25px;
+    font-size: 1.3rem;
+}
+
+#artigo-informacoes{
+    display: flex;
+    font-family: Source Sans Pro;
+    margin-left: 50px;
+}
+
+#artigo-informacoes li{
+    margin-right: 20px;
+}
+
+hr{
+    background-color: rgb(197, 194, 194);
+    width: 90%;
+}
+
+#artigo-bottom{
+    width: 90%;
+    height: 10px;
+    border: none;
+}
+
+#form-contato{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+#form-contato input, select, textarea{
+    margin-bottom: 15px;
+}
+
+#form-contato label{
+    margin-bottom: 4px;
+}
+
+#form-contato button{
+    width: 100px;
+    height: 30px;
+}
+
+#contato{
+    margin-left: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.nav-a{
+    color: white;
+}
+
+.artigo-item{
+    width: 90%;
+    height: auto;
+    background-color: rgb(232, 230, 230);
+    display: flex;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+}
+
+.artigo-item-img{
+    height: auto;
+    width: 40%;
+}
+
+.artigo-item-informacoes{
+    display: flex;
+    flex-direction: column;
+}
+
+#buscar{
+    width: 90%;
+}
+
+#cadastro-email input, button{
+    width: 90%;
+}
+
+#mobile-nav{
+    display: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+#mobile-nav-itens{
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    height: 700px;
+    margin-top: -166px;
+    padding-top: 100px;
+    display: none;
+}
+
+#mobile-nav-itens li, a{
+    color: white;
+    margin-bottom: 30px;
+    margin-left: 5px;
+    font-size: 1.1rem;
+}
+
+#mobile-nav-itens li{
+    border-top: 1px solid rgb(67, 66, 66);
+    height: 30px;
+    padding-top: 20px;
+}
+
+#mobile-nav-close{
+    color: white;
+}
+
+#login{
+    background-color: #f6f6f6;
+}
+
+#card{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+    background-color: white;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 0 rgb(0 0 0 / 7%), 1px 2px 5px 0 rgb(0 0 0 / 6%);
+}
+
+#card form{
+    display: flex;
+    flex-direction: column;
+}
+
+#card p{
+    margin-left: 100px;
+}
+
+#card input{
+    margin: 0 auto;
+    width: 90%;
+    background-color: #fcf8f8;
+    border: 1px solid #c4c3c3;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    font-family: Roboto, sans-serif;
+}
+
+#card button{
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(88, 137, 235);
+    color: white;
+}
+
+#card p{
+    margin: 0 auto;
+    margin-bottom: 10px;
+    font-family: Roboto,serif;
+    color: rgb(81, 80, 80);
+}
+
+#login-title{
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-family: Roboto,serif;
+    color: rgb(81, 80, 80);
+}
+
+.footer-item{
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+}
+
+.footer-item h1{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.footer-item ul{
+    display: flex;
+    flex-direction: column;
+    list-style: circle;
+}
+
+.footer-item li{
+    margin-bottom: 10px;
+}
+
+.footer-item input{
+    height: 33px;
+    border: 1px solid gray;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.footer-item button{
+    border: none;
+    background-color: #0a66c2;
+    color: white;
+    margin-top: 10px;
+    height: 30px;
+}
+
+.footer-item a{
+    color: rgb(46, 46, 46);
+}
+
+@media(max-width: 640px){
+    .container{
+        width: 90%;
+        padding: 0;
+    }
+
+    .footer-item{
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    #card{
+        width: 300px;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    #form-contato input, select, textarea{
+        width: 100%;
+    }
+
+    #title{
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .side-content{
+        width: 100%;
+    }
+
+    #carousel{
+        width: 100%;
+        margin-left: 20px;
+    }
+
+    .carousel slide{
+        width: 100%;
+    }
+
+    .artigo{
+        width: 100%;
+        margin-left: 30px;
+    }
+
+    #artigo-titulo{
+        font-size: 1.8rem;
+        width: 95%;
+        margin-left: 10px;
+    }
+
+    .artigo-paragrafo{
+        font-size: 1rem;
+        width: 100%;
+        margin-left: 50px;
+        margin-left: 10px;
+    }
+
+    #artigo-informacoes{
+        width: 100%;
+    }
+
+    .artigo-item{
+        width: 270px;
+        margin-left: 0px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .artigo-item-img{
+        display: none;
+    }
+
+    #nav-itens li{
+        display: none;
+    }
+
+    .side-content{
+        width: 170%;
+    }
+
+    #mobile-nav{
+        display: initial;
+    }
+
+    .main-content{
+        width: 100%;
+    }
+}
+
+
+@media(max-width: 1317px){
+    .artigo{
+        width: 90%;
+    }
+}
